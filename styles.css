@@ -1,17 +1,17 @@
 body {
     font-family: 'Times New Roman', Times, serif, sans-serif;
     text-align: center;
-    background-color: #76c9f0;
-    color: #fa0f0f;
+    background-color: #f060f0;
+    color: #3d3737;
     margin: 0;
     padding: 0;
 }
 
 header {
-    background-color: #8e8cf1;
+    background-color: #517ffd;
     padding: 20px;
     font-size: 24px;
-    color: rgb(230, 216, 216);
+    color: rgb(255, 0, 0);
 }
 
 .noticia-destacada, .noticia-archivada {
@@ -46,33 +46,33 @@ header {
 .gif-header {
     position: absolute;
     top: 10px;
-    right: 20px;
-    width: 170px; /* Ajusta según el tamaño del título */
-    height: auto; /* Mantiene la proporción */
+    right: 300px;
+    width: 300px; /* Ajusta según el tamaño del título */
+    height:fit-content /* Mantiene la proporción */
 }
 
 .gif-header-2 {
-    position:absolute;
+    position:relative;
     top: 10px;
-    right: 120px;
-    width: 170px; /* Ajusta según el tamaño del título */
-    height: auto; /* Mantiene la proporción */
+    right: 20px;
+    width: 100px; /* Ajusta según el tamaño del título */
+    height:min-content; /* Mantiene la proporción */
 }
 
 .gif-header-3 {
     position:absolute;
     top: 10px;
-    right: 120px;
-    width: 170px; /* Ajusta según el tamaño del título */
-    height: auto; /* Mantiene la proporción */
+    right: 350px;
+    width: 100px; /* Ajusta según el tamaño del título */
+    height: fit-content; /* Mantiene la proporción */
 }
 
 .gif-header-4{
     position: absolute;
     top: 10px;
-    right: 1050px;
-    width: 150px;
-    height: auto;
+    right: 960px;
+    width: 120px;
+    height:min-content;
 }
 
 /* Contenedor del menú */
