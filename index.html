@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  </div>
     <!-- Botón de menú -->
     <div class="menu-container">
         <button class="menu-btn" onclick="toggleMenu()">☰</button>
@@ -17,51 +18,25 @@
 
     <header>
        <section> <h1>💌 Novedades de Nuestro Amor 💌</h1></section>
-        <section> <img src="imagenes/Gif de inicio 2.gif" alt="GIF romántico 2" class="gif-header-2"></section>
         <section> <img src="imagenes/floresita amarilla.gif" alt="Gif corazon" class="gif-header-4"></section>
     </header>
 
     <main>
+      <button onclick="toggleLoveCard()" class="toggle-button">haz click aquí</button>
+
+      <section class="love-news" id="loveCard" style="display: none;">
+        <div class="love-card">
+          <h2>Para el amor de mi vida</h2>
+          <p id="love-message">No hay nada más hermoso que ver mi reflejo en tu mirada, por eso cada segundo a tu lado vale más de lo que puedes imaginar, nuestro amor se siente, y se que todo lo que hemos vivido solo es el inicio de una gran aventura. Te amo princesa.
+          </p>
+          <p class="timer-title">Mi amor por ti comenzó hace…</p>
+          <div id="love-timer"></div>
+          <p></p>
+          <div class="heart-container"></div>
+       </section>
         <section class="noticia-destacada">
-            <h2>Contigo, el tiempo se detiene 🌸</h2>
-
-<p>
-  Mi niña hermosa,
-</p>
-
-<p>
-  Esta semana el destino nos regaló apenas unos breves instantes, pero qué dulce milagro fue cada uno de ellos. ✨ Verte, aunque fuera por un momento, bastó para que todo en mí se iluminara. En medio del cansancio, de las preocupaciones y de los días grises, verte me dio todas las energias que necesitaba para dar todo de mi.
-</p>
-
-<p>
-  Estar a tu lado es sentir que el mundo entero guarda silencio, que las heridas se curan, que la vida vuelve a su ritmo más sereno y bello. 💖 
-</p>
-
-<p> Gracias por regalarme tu compañía aún en los días más difíciles, cuando amar no es sólo celebrar, sino también sostenerse mutuamente en silencio.
-</p>
-
-<blockquote style="font-style: italic; color: #360fa0;">
-  “Si te quiero es porque sos<br>
-  mi amor, mi cómplice y todo.”<br>
-  – Mario Benedetti
-</blockquote>
-
-<p>
-  He aprendido que no hacen falta horas infinitas ni gestos grandilocuentes para reafirmar lo muchisisimo que te amo. 🤍 Basta con mirar tu linda sonrisa para sentieme completamente amado, para sentir que eres lo que quiero para toda mi vida
-</p>
-
-<p>
-  A veces me pregunto que hice para merecer este amor tan puro, tan lleno de ternura y complicidad. Y aunque no tenga la respuesta, cada dia elijo agradecerte, amarte, cuidarte.  
-</p>
-
-
-<p>
-  Lo que siento pot ti es un gran amor que no se puede expresar con palabras, pero existen dos las cuales son mis favoritas para compartirte un  poco de lo que siento: "Te amo", te aseguro que te amo, más que ayer y menos que mañana, siempre estaré para ti. 
-</p>
-
-<p><em>Texto: Oliver Doroteo</em></p>
+         
           </section>
-        
         <a href="noticias.html" class="boton">📜 Ver Noticias Anteriores</a>
     </main>
 
