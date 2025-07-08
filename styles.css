@@ -71,7 +71,7 @@ header {
 }
 
 .gif-header-4{
-    position: absolute;
+    position: auto;
     top: 3.2em;
     right: 3em;
     width: 3em;
@@ -291,7 +291,7 @@ header {
     padding: 10px;
 }
 .gif-header-4{
-    position: absolute;
+    position: auto;
     top: .6em;
     right: 5.5em;
     width: 3.1em;
@@ -304,4 +304,16 @@ header {
     width: 5em ; /* Ajusta según el tamaño del título */
     height: fit-content; /* Mantiene la proporción */
 }
+}
+.contador-nota {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin: 1em auto;
+  padding: 0.5em;
+  background-color: #fff4e0;
+  color: #d10073;
+  border: 2px solid #ff8ab5;
+  border-radius: 12px;
+  width: fit-content;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
 }
