@@ -317,3 +317,18 @@ header {
   width: fit-content;
   box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
 }
+
+.noticia-destacada.navidad {
+  background: linear-gradient(135deg, #00a85a, #fd0019);
+  color: #fff;
+  border: 3px solid #83f361;
+}
+
+.noticia-destacada.navidad h2 {
+  color: #e5ff51;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+}
+
+.noticia-destacada.navidad em {
+  color: #ffe8a1;
+}
