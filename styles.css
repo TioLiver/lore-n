@@ -332,3 +332,146 @@ header {
 .noticia-destacada.navidad em {
   color: #ffe8a1;
 }
+
+.aniversario-oculto {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.oculto {
+  display: none;
+}
+
+/* CONTADOR */
+#contador h2 {
+  font-size: 1.5rem;
+}
+
+#tiempo {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+/* CORAZÓN */
+#corazon {
+  width: 180px;
+  height: 180px;
+  background: crimson;
+  position: relative; /* 🔴 ESTO ES CLAVE */
+  margin: 40px auto;
+  transform: rotate(-45deg);
+  cursor: pointer;
+  animation: latido 1.5s infinite;
+  z-index: 2;
+}
+
+#corazon::before,
+#corazon::after {
+  content: "";
+  width: 180px;
+  height: 180px;
+  background: crimson;
+  border-radius: 50%;
+  position: absolute;
+}
+
+#corazon::before {
+  top: -90px;
+  left: 0;
+}
+
+#corazon::after {
+  left: 90px;
+  top: 0;
+}
+
+/* CONTENIDO INTERNO */
+.corazon-contenido {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(45deg);
+  z-index: 5; /* 🔴 MÁS ARRIBA QUE TODO */
+}
+
+#numero {
+  font-size: 5rem;
+  color: white;
+  font-weight: 900;
+  line-height: 1;
+}
+
+/* ANIMACIÓN */
+@keyframes latido {
+  0%, 100% { transform: rotate(-45deg) scale(1); }
+  50% { transform: rotate(-45deg) scale(1.1); }
+}
+
+/* NÚMEROS 8 */
+.ocho {
+  position: fixed;
+  top: -50px;
+  font-size: 2rem;
+  animation: caer 3s linear forwards;
+}
+
+@keyframes caer {
+  to {
+    transform: translateY(110vh);
+    opacity: 0;
+  }
+}
+
+.corazon-contenido {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(45deg); /* corrige la rotación */
+}
+
+#numero {
+  font-size: 4.5rem;
+  color: white;
+  font-weight: bold;
+  line-height: 1;
+}
+
+#aniversario {
+  background: linear-gradient(135deg, #7297fd, hsl(219, 96%, 66%));
+  border-radius: 20px;
+  max-width: 700px;
+  margin: 40px auto;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+#contador,
+#corazon-container,
+#nota-aniversario {
+  background: rgb(194, 203, 255);
+  border-radius: 16px;
+  padding: 30px 20px;
+  margin: 20px;
+}
+
+.confeti {
+  position: fixed;
+  top: -20px;
+  font-size: 1.5rem;
+  animation: confetiCaer 4s linear forwards;
+  pointer-events: none;
+}
+
+@keyframes confetiCaer {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(110vh) rotate(720deg);
+    opacity: 0;
+  }
+}
