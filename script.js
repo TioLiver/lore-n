@@ -55,10 +55,16 @@ if (container) {
   }, 300);
 }
 
-// ⏰ FECHA REAL: mañana a las 7:00 AM
+// ⏰ HOY a las 7:00 AM
 const fechaObjetivo = new Date();
-fechaObjetivo.setDate(fechaObjetivo.getDate() + 1);
 fechaObjetivo.setHours(7, 0, 0, 0);
+
+// ⏭️ Si ya pasaron las 7, mostrar el corazón directo
+if (new Date() >= fechaObjetivo) {
+  document.getElementById("contador").style.display = "none";
+  document.getElementById("corazon-container").classList.remove("oculto");
+}
+
 
 
 const contador = document.getElementById("contador");
